@@ -59,8 +59,10 @@ for folder in sorted(os.listdir(SRC)):
             add(os.path.join(p, f), folder, f[:-4], ZIPDATE)
 
 # our two routes (already in site/gpx with metadata)
-ours = [('alameda-central-cdmx', 'Mexico, Mexico City - Alameda Central'),
-        ('reforma-gengar-raids-cdmx', 'Mexico, Mexico City - Reforma Gengar Raids')]
+ours = [('alameda-central-cdmx', 'Mexico, Mexico City - Alameda Central Loop (long)'),
+        ('reforma-gengar-raids-cdmx', 'Mexico, Mexico City - Reforma Gengar Raids Loop (long)'),
+        ('alameda-central-short-cdmx', 'Mexico, Mexico City - Alameda Central Short Loop'),
+        ('reforma-gengar-raids-short-cdmx', 'Mexico, Mexico City - Reforma Gengar Raid Lap (short)')]
 for slug, nm in ours:
     used_slugs.add(slug)
 for slug, nm in ours:

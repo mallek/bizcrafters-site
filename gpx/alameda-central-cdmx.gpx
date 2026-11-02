@@ -2,254 +2,232 @@
 <gpx version="1.1" creator="rocky (OSM landmarks and footpaths, ODbL)" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
 <metadata><name>Alameda Central, Mexico City</name></metadata>
 <wpt lat="19.435121" lon="-99.143115"></wpt>
-<wpt lat="19.435212" lon="-99.143173"></wpt>
-<wpt lat="19.435295" lon="-99.143059"></wpt>
-<wpt lat="19.435601" lon="-99.143067"></wpt>
+<wpt lat="19.435121" lon="-99.143115"><name>Event bonus spot (Alameda)</name></wpt>
+<wpt lat="19.435157" lon="-99.142995"></wpt>
+<wpt lat="19.434728" lon="-99.142283"></wpt>
+<wpt lat="19.434741" lon="-99.142239"><name>Fuente Rítmica</name></wpt>
+<wpt lat="19.434753" lon="-99.142201"></wpt>
+<wpt lat="19.434621" lon="-99.142106"></wpt>
+<wpt lat="19.434985" lon="-99.142048"><name>Fountain</name></wpt>
+<wpt lat="19.435386" lon="-99.141983"><name>Monumento a Beethoven</name></wpt>
+<wpt lat="19.436088" lon="-99.141871"></wpt>
+<wpt lat="19.435990" lon="-99.142051"></wpt>
+<wpt lat="19.436016" lon="-99.142094"><name>Fuente Rítmica</name></wpt>
+<wpt lat="19.436042" lon="-99.142136"></wpt>
+<wpt lat="19.435916" lon="-99.142847"></wpt>
+<wpt lat="19.435861" lon="-99.142884"><name>Fuente de Danaides</name></wpt>
+<wpt lat="19.435599" lon="-99.143063"><name>Fuente Mujer con Flores</name></wpt>
+<wpt lat="19.435577" lon="-99.143078"></wpt>
+<wpt lat="19.435615" lon="-99.143298"><name>Party Play spot (Alameda)</name></wpt>
 <wpt lat="19.435703" lon="-99.143808"></wpt>
-<wpt lat="19.435816" lon="-99.143839"></wpt>
-<wpt lat="19.435657" lon="-99.143826"></wpt>
-<wpt lat="19.435584" lon="-99.143987"></wpt>
-<wpt lat="19.435164" lon="-99.144060"></wpt>
-<wpt lat="19.435170" lon="-99.144127"></wpt>
-<wpt lat="19.435123" lon="-99.144253"></wpt>
-<wpt lat="19.435494" lon="-99.144914"></wpt>
-<wpt lat="19.435452" lon="-99.144988"></wpt>
-<wpt lat="19.435540" lon="-99.144900"></wpt>
-<wpt lat="19.435632" lon="-99.144978"></wpt>
-<wpt lat="19.435950" lon="-99.144948"></wpt>
-<wpt lat="19.435906" lon="-99.144993"></wpt>
-<wpt lat="19.436037" lon="-99.145752"></wpt>
-<wpt lat="19.435975" lon="-99.145812"></wpt>
-<wpt lat="19.435984" lon="-99.145883"></wpt>
-<wpt lat="19.436074" lon="-99.145971"></wpt>
-<wpt lat="19.436860" lon="-99.145825"></wpt>
-<wpt lat="19.436831" lon="-99.145777"></wpt>
-<wpt lat="19.436800" lon="-99.145786"></wpt>
-<wpt lat="19.436974" lon="-99.145804"></wpt>
-<wpt lat="19.437159" lon="-99.146491"></wpt>
-<wpt lat="19.437017" lon="-99.146725"></wpt>
-<wpt lat="19.436991" lon="-99.146547"></wpt>
-<wpt lat="19.437017" lon="-99.146725"></wpt>
-<wpt lat="19.436790" lon="-99.146978"></wpt>
-<wpt lat="19.435933" lon="-99.147099"></wpt>
-<wpt lat="19.435917" lon="-99.146937"></wpt>
-<wpt lat="19.435933" lon="-99.147099"></wpt>
-<wpt lat="19.436589" lon="-99.147014"></wpt>
-<wpt lat="19.436632" lon="-99.147177"></wpt>
-<wpt lat="19.436780" lon="-99.147241"></wpt>
-<wpt lat="19.436084" lon="-99.148294"></wpt>
-<wpt lat="19.436078" lon="-99.148249"></wpt>
-<wpt lat="19.436780" lon="-99.147241"></wpt>
-<wpt lat="19.436748" lon="-99.147350"></wpt>
-<wpt lat="19.436929" lon="-99.147474"></wpt>
-<wpt lat="19.436844" lon="-99.147611"></wpt>
-<wpt lat="19.436929" lon="-99.147474"></wpt>
-<wpt lat="19.437019" lon="-99.147537"></wpt>
-<wpt lat="19.436935" lon="-99.147661"></wpt>
-<wpt lat="19.437041" lon="-99.148345"></wpt>
-<wpt lat="19.437647" lon="-99.148248"></wpt>
-<wpt lat="19.437460" lon="-99.147260"></wpt>
-<wpt lat="19.437671" lon="-99.147215"></wpt>
-<wpt lat="19.437746" lon="-99.147594"></wpt>
-<wpt lat="19.438667" lon="-99.147391"></wpt>
-<wpt lat="19.439722" lon="-99.147141"></wpt>
-<wpt lat="19.439600" lon="-99.146330"></wpt>
-<wpt lat="19.438428" lon="-99.146584"></wpt>
-<wpt lat="19.437626" lon="-99.146772"></wpt>
-<wpt lat="19.437733" lon="-99.146632"></wpt>
-<wpt lat="19.437696" lon="-99.146572"></wpt>
-<wpt lat="19.437878" lon="-99.146368"></wpt>
-<wpt lat="19.437696" lon="-99.146572"></wpt>
-<wpt lat="19.437618" lon="-99.146490"></wpt>
-<wpt lat="19.439080" lon="-99.144898"></wpt>
-<wpt lat="19.439992" lon="-99.143885"></wpt>
-<wpt lat="19.440131" lon="-99.144003"></wpt>
-<wpt lat="19.440316" lon="-99.143961"></wpt>
-<wpt lat="19.440332" lon="-99.143834"></wpt>
-<wpt lat="19.440658" lon="-99.143847"></wpt>
-<wpt lat="19.440880" lon="-99.143750"></wpt>
-<wpt lat="19.440447" lon="-99.143860"></wpt>
-<wpt lat="19.440168" lon="-99.143738"></wpt>
-<wpt lat="19.439992" lon="-99.143885"></wpt>
-<wpt lat="19.439760" lon="-99.143653"></wpt>
-<wpt lat="19.439350" lon="-99.144104"></wpt>
-<wpt lat="19.437953" lon="-99.145642"></wpt>
-<wpt lat="19.437598" lon="-99.145969"></wpt>
-<wpt lat="19.437953" lon="-99.145642"></wpt>
-<wpt lat="19.439350" lon="-99.144104"></wpt>
-<wpt lat="19.439838" lon="-99.143544"></wpt>
-<wpt lat="19.440016" lon="-99.143398"></wpt>
-<wpt lat="19.440091" lon="-99.143458"></wpt>
-<wpt lat="19.440384" lon="-99.143055"></wpt>
-<wpt lat="19.440764" lon="-99.142726"></wpt>
-<wpt lat="19.440711" lon="-99.142646"></wpt>
-<wpt lat="19.440777" lon="-99.142412"></wpt>
-<wpt lat="19.440301" lon="-99.142398"></wpt>
-<wpt lat="19.440143" lon="-99.142034"></wpt>
-<wpt lat="19.440135" lon="-99.142037"></wpt>
-<wpt lat="19.440060" lon="-99.142027"></wpt>
-<wpt lat="19.439968" lon="-99.141600"></wpt>
-<wpt lat="19.439941" lon="-99.141156"></wpt>
-<wpt lat="19.439888" lon="-99.140427"></wpt>
-<wpt lat="19.439919" lon="-99.140872"></wpt>
-<wpt lat="19.439827" lon="-99.140883"></wpt>
-<wpt lat="19.439751" lon="-99.141002"></wpt>
-<wpt lat="19.438843" lon="-99.141150"></wpt>
-<wpt lat="19.438930" lon="-99.141645"></wpt>
-<wpt lat="19.438486" lon="-99.141741"></wpt>
-<wpt lat="19.438830" lon="-99.141666"></wpt>
-<wpt lat="19.438924" lon="-99.142184"></wpt>
-<wpt lat="19.439033" lon="-99.142248"></wpt>
-<wpt lat="19.439182" lon="-99.142220"></wpt>
-<wpt lat="19.439033" lon="-99.142248"></wpt>
-<wpt lat="19.438924" lon="-99.142184"></wpt>
-<wpt lat="19.439039" lon="-99.143077"></wpt>
-<wpt lat="19.438383" lon="-99.143213"></wpt>
-<wpt lat="19.438213" lon="-99.142756"></wpt>
-<wpt lat="19.438393" lon="-99.143675"></wpt>
-<wpt lat="19.437744" lon="-99.143835"></wpt>
-<wpt lat="19.437760" lon="-99.143907"></wpt>
-<wpt lat="19.437638" lon="-99.143937"></wpt>
-<wpt lat="19.437622" lon="-99.143865"></wpt>
-<wpt lat="19.436732" lon="-99.144084"></wpt>
-<wpt lat="19.436775" lon="-99.144273"></wpt>
+<wpt lat="19.435818" lon="-99.143897"><name>Alameda Central</name></wpt>
+<wpt lat="19.435870" lon="-99.143937"></wpt>
+<wpt lat="19.436287" lon="-99.143865"></wpt>
+<wpt lat="19.436394" lon="-99.143978"></wpt>
+<wpt lat="19.436685" lon="-99.143875"></wpt>
 <wpt lat="19.436732" lon="-99.144084"></wpt>
 <wpt lat="19.436894" lon="-99.144044"></wpt>
 <wpt lat="19.436868" lon="-99.143914"></wpt>
 <wpt lat="19.436961" lon="-99.143892"></wpt>
-<wpt lat="19.436860" lon="-99.143421"></wpt>
+<wpt lat="19.436894" lon="-99.143576"><name>Templo de San Juan de Dios</name></wpt>
 <wpt lat="19.436815" lon="-99.143202"></wpt>
 <wpt lat="19.436930" lon="-99.143177"></wpt>
 <wpt lat="19.436889" lon="-99.142982"></wpt>
-<wpt lat="19.436948" lon="-99.142886"></wpt>
-<wpt lat="19.437369" lon="-99.142775"></wpt>
-<wpt lat="19.437104" lon="-99.141592"></wpt>
+<wpt lat="19.436976" lon="-99.142954"><name>Benjamín Carrión</name></wpt>
+<wpt lat="19.437396" lon="-99.142819"></wpt>
+<wpt lat="19.437534" lon="-99.143454"><name>Fountain</name></wpt>
+<wpt lat="19.437638" lon="-99.143937"></wpt>
+<wpt lat="19.437760" lon="-99.143907"></wpt>
+<wpt lat="19.437744" lon="-99.143835"></wpt>
+<wpt lat="19.438393" lon="-99.143675"></wpt>
+<wpt lat="19.438273" lon="-99.143040"><name>La Nana</name></wpt>
+<wpt lat="19.438273" lon="-99.143040"></wpt>
+<wpt lat="19.438383" lon="-99.143213"></wpt>
+<wpt lat="19.439039" lon="-99.143077"></wpt>
+<wpt lat="19.438830" lon="-99.141666"></wpt>
+<wpt lat="19.438515" lon="-99.141735"><name>Fitness station</name></wpt>
+<wpt lat="19.437195" lon="-99.142023"></wpt>
+<wpt lat="19.437099" lon="-99.141555"><name>Teatro Hidalgo</name></wpt>
 <wpt lat="19.436907" lon="-99.140617"></wpt>
-<wpt lat="19.436991" lon="-99.140603"></wpt>
-<wpt lat="19.437810" lon="-99.140468"></wpt>
-<wpt lat="19.437822" lon="-99.140541"></wpt>
-<wpt lat="19.437810" lon="-99.140468"></wpt>
-<wpt lat="19.438606" lon="-99.140339"></wpt>
-<wpt lat="19.438640" lon="-99.140572"></wpt>
-<wpt lat="19.438628" lon="-99.140574"></wpt>
-<wpt lat="19.438606" lon="-99.140339"></wpt>
+<wpt lat="19.437937" lon="-99.140450"><name>Aquiles Serdán</name></wpt>
+<wpt lat="19.438230" lon="-99.140402"><name>Plaza Aquiles Serdán</name></wpt>
+<wpt lat="19.438443" lon="-99.140367"><name>María Victoria</name></wpt>
 <wpt lat="19.438667" lon="-99.140331"></wpt>
-<wpt lat="19.438589" lon="-99.139782"></wpt>
+<wpt lat="19.438513" lon="-99.139296"><name>Templo de la Concepción</name></wpt>
 <wpt lat="19.438507" lon="-99.139257"></wpt>
-<wpt lat="19.438444" lon="-99.138893"></wpt>
-<wpt lat="19.437602" lon="-99.139018"></wpt>
-<wpt lat="19.436747" lon="-99.139147"></wpt>
-<wpt lat="19.436706" lon="-99.138852"></wpt>
-<wpt lat="19.436668" lon="-99.138859"></wpt>
-<wpt lat="19.436108" lon="-99.138970"></wpt>
-<wpt lat="19.436117" lon="-99.139028"></wpt>
-<wpt lat="19.436108" lon="-99.138970"></wpt>
-<wpt lat="19.435861" lon="-99.139019"></wpt>
-<wpt lat="19.435715" lon="-99.138001"></wpt>
-<wpt lat="19.434488" lon="-99.138189"></wpt>
-<wpt lat="19.434622" lon="-99.139263"></wpt>
-<wpt lat="19.433919" lon="-99.139408"></wpt>
-<wpt lat="19.432626" lon="-99.139600"></wpt>
-<wpt lat="19.431824" lon="-99.139700"></wpt>
-<wpt lat="19.432005" lon="-99.141202"></wpt>
-<wpt lat="19.431180" lon="-99.141327"></wpt>
-<wpt lat="19.432005" lon="-99.141202"></wpt>
-<wpt lat="19.431992" lon="-99.141096"></wpt>
-<wpt lat="19.432930" lon="-99.140959"></wpt>
-<wpt lat="19.432942" lon="-99.140941"></wpt>
-<wpt lat="19.432794" lon="-99.140964"></wpt>
-<wpt lat="19.432963" lon="-99.142066"></wpt>
-<wpt lat="19.432148" lon="-99.142201"></wpt>
-<wpt lat="19.431355" lon="-99.142330"></wpt>
-<wpt lat="19.431389" lon="-99.142594"></wpt>
-<wpt lat="19.430452" lon="-99.142758"></wpt>
-<wpt lat="19.430527" lon="-99.143278"></wpt>
-<wpt lat="19.430604" lon="-99.143811"></wpt>
-<wpt lat="19.430670" lon="-99.143800"></wpt>
-<wpt lat="19.431540" lon="-99.143662"></wpt>
-<wpt lat="19.431659" lon="-99.144435"></wpt>
-<wpt lat="19.431297" lon="-99.144498"></wpt>
-<wpt lat="19.431357" lon="-99.144910"></wpt>
-<wpt lat="19.431723" lon="-99.144852"></wpt>
-<wpt lat="19.431839" lon="-99.145606"></wpt>
-<wpt lat="19.431795" lon="-99.145316"></wpt>
-<wpt lat="19.430915" lon="-99.145476"></wpt>
-<wpt lat="19.432566" lon="-99.145184"></wpt>
-<wpt lat="19.432721" lon="-99.146251"></wpt>
-<wpt lat="19.431964" lon="-99.146412"></wpt>
-<wpt lat="19.432721" lon="-99.146251"></wpt>
-<wpt lat="19.432845" lon="-99.147128"></wpt>
-<wpt lat="19.432923" lon="-99.147678"></wpt>
-<wpt lat="19.433811" lon="-99.147504"></wpt>
-<wpt lat="19.433700" lon="-99.146799"></wpt>
-<wpt lat="19.433830" lon="-99.147620"></wpt>
-<wpt lat="19.433906" lon="-99.147605"></wpt>
-<wpt lat="19.433830" lon="-99.147620"></wpt>
-<wpt lat="19.433811" lon="-99.147504"></wpt>
-<wpt lat="19.435081" lon="-99.147206"></wpt>
-<wpt lat="19.435223" lon="-99.147183"></wpt>
-<wpt lat="19.435158" lon="-99.146524"></wpt>
+<wpt lat="19.438935" lon="-99.139191"><name>Plaza de la Concepción</name></wpt>
+<wpt lat="19.439622" lon="-99.139084"></wpt>
+<wpt lat="19.439669" lon="-99.139874"></wpt>
+<wpt lat="19.439780" lon="-99.140153"></wpt>
+<wpt lat="19.439869" lon="-99.140140"></wpt>
+<wpt lat="19.439884" lon="-99.140364"><name>Playground</name></wpt>
+<wpt lat="19.439906" lon="-99.140683"><name>Fitness station</name></wpt>
+<wpt lat="19.439937" lon="-99.141136"><name>Playground</name></wpt>
+<wpt lat="19.439968" lon="-99.141600"></wpt>
+<wpt lat="19.440075" lon="-99.142062"></wpt>
+<wpt lat="19.440143" lon="-99.142034"></wpt>
+<wpt lat="19.440176" lon="-99.142110"><name>Playground</name></wpt>
+<wpt lat="19.440301" lon="-99.142398"></wpt>
+<wpt lat="19.440589" lon="-99.142362"></wpt>
+<wpt lat="19.440794" lon="-99.142421"></wpt>
+<wpt lat="19.441067" lon="-99.142211"><name>Jardin Alejandro Flores</name></wpt>
+<wpt lat="19.441067" lon="-99.142211"></wpt>
+<wpt lat="19.440837" lon="-99.142401"></wpt>
+<wpt lat="19.440900" lon="-99.142609"></wpt>
+<wpt lat="19.440384" lon="-99.143055"></wpt>
+<wpt lat="19.440358" lon="-99.143090"><name>Monumento a Simón Bolívar</name></wpt>
+<wpt lat="19.440091" lon="-99.143458"></wpt>
+<wpt lat="19.440016" lon="-99.143398"></wpt>
+<wpt lat="19.439838" lon="-99.143544"></wpt>
+<wpt lat="19.437744" lon="-99.145871"><name>Museo Kaluz</name></wpt>
+<wpt lat="19.437627" lon="-99.146001"></wpt>
+<wpt lat="19.439760" lon="-99.143653"></wpt>
+<wpt lat="19.439992" lon="-99.143885"></wpt>
+<wpt lat="19.440168" lon="-99.143738"></wpt>
+<wpt lat="19.440383" lon="-99.143850"></wpt>
+<wpt lat="19.440658" lon="-99.143847"></wpt>
+<wpt lat="19.440332" lon="-99.143834"></wpt>
+<wpt lat="19.440316" lon="-99.143961"></wpt>
+<wpt lat="19.440131" lon="-99.144003"></wpt>
+<wpt lat="19.439992" lon="-99.143885"></wpt>
+<wpt lat="19.437978" lon="-99.146095"><name>Plaza Francisco Zarco</name></wpt>
+<wpt lat="19.437618" lon="-99.146490"></wpt>
+<wpt lat="19.437733" lon="-99.146632"></wpt>
+<wpt lat="19.437626" lon="-99.146772"></wpt>
+<wpt lat="19.437960" lon="-99.146697"><name>Iglesia de San Hipólito</name></wpt>
+<wpt lat="19.438288" lon="-99.146624"><name>Manuel Buendia Tellezgiron</name></wpt>
+<wpt lat="19.440390" lon="-99.146155"></wpt>
+<wpt lat="19.439600" lon="-99.146330"></wpt>
+<wpt lat="19.439691" lon="-99.146938"><name>Primera Iglesia Bautista de la Ciudad de México</name></wpt>
+<wpt lat="19.439722" lon="-99.147141"></wpt>
+<wpt lat="19.437746" lon="-99.147594"></wpt>
+<wpt lat="19.437671" lon="-99.147215"><name>Museo del Pulque y las Pulquerías</name></wpt>
+<wpt lat="19.437671" lon="-99.147215"></wpt>
+<wpt lat="19.437460" lon="-99.147260"></wpt>
+<wpt lat="19.437647" lon="-99.148248"></wpt>
+<wpt lat="19.437444" lon="-99.148281"><name>Teatro Loteria Nacional</name></wpt>
+<wpt lat="19.437041" lon="-99.148345"></wpt>
+<wpt lat="19.436935" lon="-99.147661"></wpt>
+<wpt lat="19.437019" lon="-99.147537"><name>Plaza de la Información</name></wpt>
+<wpt lat="19.437019" lon="-99.147537"></wpt>
+<wpt lat="19.436748" lon="-99.147350"></wpt>
+<wpt lat="19.436780" lon="-99.147241"></wpt>
+<wpt lat="19.436539" lon="-99.147603"><name>Statue</name></wpt>
+<wpt lat="19.436192" lon="-99.148123"><name>Mural</name></wpt>
+<wpt lat="19.435654" lon="-99.148930"><name>Memorial Rescatemos a David y Miguel</name></wpt>
+<wpt lat="19.435643" lon="-99.148947"></wpt>
+<wpt lat="19.435558" lon="-99.148917"></wpt>
+<wpt lat="19.435433" lon="-99.149029"><name>Puerta 1808</name></wpt>
+<wpt lat="19.435371" lon="-99.149085"></wpt>
+<wpt lat="19.435171" lon="-99.146755"><name>Historic memorial</name></wpt>
 <wpt lat="19.435129" lon="-99.146263"></wpt>
 <wpt lat="19.435224" lon="-99.146243"></wpt>
+<wpt lat="19.435221" lon="-99.146130"><name>Fuente Rítmica</name></wpt>
 <wpt lat="19.435221" lon="-99.146130"></wpt>
-<wpt lat="19.435339" lon="-99.146108"></wpt>
-<wpt lat="19.435421" lon="-99.145982"></wpt>
-<wpt lat="19.435396" lon="-99.145936"></wpt>
-<wpt lat="19.435405" lon="-99.146032"></wpt>
+<wpt lat="19.435224" lon="-99.146243"></wpt>
 <wpt lat="19.435129" lon="-99.146263"></wpt>
 <wpt lat="19.435050" lon="-99.145758"></wpt>
 <wpt lat="19.434537" lon="-99.145865"></wpt>
 <wpt lat="19.435050" lon="-99.145758"></wpt>
 <wpt lat="19.434880" lon="-99.144767"></wpt>
-<wpt lat="19.434081" lon="-99.144911"></wpt>
+<wpt lat="19.434561" lon="-99.144824"><name>Velocidad</name></wpt>
+<wpt lat="19.434236" lon="-99.144883"><name>Museo Memoria y Tolerancia</name></wpt>
 <wpt lat="19.433444" lon="-99.145026"></wpt>
-<wpt lat="19.433254" lon="-99.143814"></wpt>
-<wpt lat="19.433165" lon="-99.143242"></wpt>
-<wpt lat="19.432322" lon="-99.143439"></wpt>
-<wpt lat="19.432379" lon="-99.143839"></wpt>
-<wpt lat="19.432322" lon="-99.143439"></wpt>
-<wpt lat="19.433165" lon="-99.143242"></wpt>
+<wpt lat="19.433212" lon="-99.143598"><name>Plaza Santos Degollado</name></wpt>
+<wpt lat="19.433120" lon="-99.143031"><name>Barrio Chino</name></wpt>
+<wpt lat="19.432963" lon="-99.142066"></wpt>
 <wpt lat="19.433110" lon="-99.142908"></wpt>
+<wpt lat="19.434267" lon="-99.142717"><name>Arte callejero</name></wpt>
 <wpt lat="19.434529" lon="-99.142674"></wpt>
-<wpt lat="19.434387" lon="-99.141830"></wpt>
+<wpt lat="19.434337" lon="-99.141472"><name>Antimonumenta Ni Una Más</name></wpt>
 <wpt lat="19.434237" lon="-99.140851"></wpt>
-<wpt lat="19.434131" lon="-99.140869"></wpt>
-<wpt lat="19.434055" lon="-99.140341"></wpt>
-<wpt lat="19.434115" lon="-99.140758"></wpt>
-<wpt lat="19.434858" lon="-99.140658"></wpt>
-<wpt lat="19.434932" lon="-99.141147"></wpt>
-<wpt lat="19.434915" lon="-99.141486"></wpt>
-<wpt lat="19.434994" lon="-99.141542"></wpt>
-<wpt lat="19.435032" lon="-99.141819"></wpt>
-<wpt lat="19.434994" lon="-99.141542"></wpt>
-<wpt lat="19.434915" lon="-99.141486"></wpt>
-<wpt lat="19.434932" lon="-99.141147"></wpt>
 <wpt lat="19.434872" lon="-99.140758"></wpt>
-<wpt lat="19.435645" lon="-99.140645"></wpt>
-<wpt lat="19.436012" lon="-99.140592"></wpt>
-<wpt lat="19.436001" lon="-99.140520"></wpt>
-<wpt lat="19.436173" lon="-99.140490"></wpt>
-<wpt lat="19.436089" lon="-99.139964"></wpt>
-<wpt lat="19.436173" lon="-99.140490"></wpt>
-<wpt lat="19.436307" lon="-99.140467"></wpt>
-<wpt lat="19.436320" lon="-99.140552"></wpt>
+<wpt lat="19.434886" lon="-99.140864"><name>Pegaso</name></wpt>
+<wpt lat="19.434886" lon="-99.140864"></wpt>
+<wpt lat="19.434872" lon="-99.140758"></wpt>
+<wpt lat="19.435799" lon="-99.140626"><name>Museo Histórico Naval de la Ciudad de México</name></wpt>
 <wpt lat="19.436256" lon="-99.140561"></wpt>
 <wpt lat="19.436337" lon="-99.141057"></wpt>
-<wpt lat="19.436408" lon="-99.141492"></wpt>
-<wpt lat="19.436173" lon="-99.141533"></wpt>
-<wpt lat="19.436220" lon="-99.141850"></wpt>
-<wpt lat="19.436088" lon="-99.141871"></wpt>
-<wpt lat="19.435987" lon="-99.142070"></wpt>
-<wpt lat="19.436088" lon="-99.141871"></wpt>
-<wpt lat="19.435389" lon="-99.141983"></wpt>
-<wpt lat="19.435302" lon="-99.142138"></wpt>
-<wpt lat="19.435407" lon="-99.142235"></wpt>
-<wpt lat="19.435302" lon="-99.142138"></wpt>
-<wpt lat="19.435389" lon="-99.141983"></wpt>
-<wpt lat="19.434621" lon="-99.142106"></wpt>
-<wpt lat="19.434696" lon="-99.142163"></wpt>
-<wpt lat="19.434753" lon="-99.142201"></wpt>
-<wpt lat="19.434728" lon="-99.142283"></wpt>
-<wpt lat="19.435157" lon="-99.142995"></wpt>
+<wpt lat="19.436256" lon="-99.140561"></wpt>
+<wpt lat="19.436320" lon="-99.140552"></wpt>
+<wpt lat="19.436307" lon="-99.140467"></wpt>
+<wpt lat="19.436173" lon="-99.140490"></wpt>
+<wpt lat="19.436089" lon="-99.139964"></wpt>
+<wpt lat="19.436258" lon="-99.139934"></wpt>
+<wpt lat="19.436184" lon="-99.139458"><name>El Caballito</name></wpt>
+<wpt lat="19.436121" lon="-99.139054"><name>Museo del Telégrafo</name></wpt>
+<wpt lat="19.436108" lon="-99.138970"></wpt>
+<wpt lat="19.436618" lon="-99.138869"><name>Sebastián Lerdo de Tejada</name></wpt>
+<wpt lat="19.436706" lon="-99.138852"></wpt>
+<wpt lat="19.436747" lon="-99.139147"></wpt>
+<wpt lat="19.438444" lon="-99.138893"></wpt>
+<wpt lat="19.438304" lon="-99.137914"><name>Templo de San Lorenzo</name></wpt>
+<wpt lat="19.438262" lon="-99.137623"></wpt>
+<wpt lat="19.435521" lon="-99.138043"><name>Biblioteca del Congreso de la Unión</name></wpt>
+<wpt lat="19.433092" lon="-99.138415"><name>Museo del Calzado El Borceguí</name></wpt>
+<wpt lat="19.432488" lon="-99.138507"><name>Biblioteca de la Suprema Corte de Justicia</name></wpt>
+<wpt lat="19.432488" lon="-99.138507"></wpt>
+<wpt lat="19.432626" lon="-99.139600"></wpt>
+<wpt lat="19.431824" lon="-99.139700"></wpt>
+<wpt lat="19.433152" lon="-99.139515"><name>Templo de la Santísima Trinidad (Iglesia Metodista de México)</name></wpt>
+<wpt lat="19.433919" lon="-99.139408"></wpt>
+<wpt lat="19.433982" lon="-99.139841"><name>Templo Expiatorio de San Felipe de Jesús</name></wpt>
+<wpt lat="19.434036" lon="-99.140214"><name>Atrio del Templo de San Francisco</name></wpt>
+<wpt lat="19.434076" lon="-99.140492"><name>Museo del Bicentenario</name></wpt>
+<wpt lat="19.434115" lon="-99.140758"></wpt>
+<wpt lat="19.433841" lon="-99.140802"><name>Museo de La Ciudad de México</name></wpt>
+<wpt lat="19.431992" lon="-99.141096"></wpt>
+<wpt lat="19.432005" lon="-99.141202"></wpt>
+<wpt lat="19.431180" lon="-99.141327"></wpt>
+<wpt lat="19.431659" lon="-99.144435"></wpt>
+<wpt lat="19.431297" lon="-99.144498"></wpt>
+<wpt lat="19.431659" lon="-99.144435"></wpt>
+<wpt lat="19.431540" lon="-99.143662"></wpt>
+<wpt lat="19.431049" lon="-99.143740"><name>Basílica de San José y Nuestra Señora del Sagrado Corazón</name></wpt>
+<wpt lat="19.430604" lon="-99.143811"></wpt>
+<wpt lat="19.430519" lon="-99.143224"><name>Playground</name></wpt>
+<wpt lat="19.430411" lon="-99.142471"></wpt>
+<wpt lat="19.432148" lon="-99.142201"></wpt>
+<wpt lat="19.432721" lon="-99.146251"></wpt>
+<wpt lat="19.431964" lon="-99.146412"></wpt>
+<wpt lat="19.431898" lon="-99.145981"><name>Museo de la Policía</name></wpt>
+<wpt lat="19.431795" lon="-99.145316"></wpt>
+<wpt lat="19.430848" lon="-99.145488"></wpt>
+<wpt lat="19.431020" lon="-99.146612"></wpt>
+<wpt lat="19.432721" lon="-99.146251"></wpt>
+<wpt lat="19.432938" lon="-99.147797"></wpt>
+<wpt lat="19.432364" lon="-99.147914"></wpt>
+<wpt lat="19.433830" lon="-99.147620"><name>Templo El Mesías</name></wpt>
+<wpt lat="19.433830" lon="-99.147620"></wpt>
+<wpt lat="19.433700" lon="-99.146799"></wpt>
+<wpt lat="19.433701" lon="-99.146804"><name>Teatro Metropólitan</name></wpt>
+<wpt lat="19.433811" lon="-99.147504"></wpt>
+<wpt lat="19.434557" lon="-99.147329"><name>Fiesta Inn Centro Histórico</name></wpt>
+<wpt lat="19.435081" lon="-99.147206"></wpt>
+<wpt lat="19.435223" lon="-99.147183"></wpt>
+<wpt lat="19.435229" lon="-99.147243"></wpt>
+<wpt lat="19.435606" lon="-99.147179"><name>Scientology México Centro Histórico</name></wpt>
+<wpt lat="19.436278" lon="-99.147065"><name>Museo Mural Diego Rivera</name></wpt>
+<wpt lat="19.436628" lon="-99.147006"><name>Ex Convento de San Diego / Pinacoteca Virreinal / Laboratorio Arte Alameda</name></wpt>
+<wpt lat="19.436790" lon="-99.146978"></wpt>
+<wpt lat="19.437136" lon="-99.146540"></wpt>
+<wpt lat="19.437095" lon="-99.146354"><name>Monumento a José Martí</name></wpt>
+<wpt lat="19.436974" lon="-99.145804"></wpt>
+<wpt lat="19.436818" lon="-99.145833"><name>Fuente Rítmica</name></wpt>
+<wpt lat="19.436142" lon="-99.145958"><name>Alejandro de Humboldt</name></wpt>
+<wpt lat="19.436074" lon="-99.145971"></wpt>
+<wpt lat="19.435984" lon="-99.145883"></wpt>
+<wpt lat="19.436010" lon="-99.145819"><name>Fuente de Mercurio</name></wpt>
+<wpt lat="19.436037" lon="-99.145752"></wpt>
+<wpt lat="19.435906" lon="-99.144993"></wpt>
+<wpt lat="19.435880" lon="-99.144988"><name>Fuente La Dama</name></wpt>
+<wpt lat="19.435551" lon="-99.144925"><name>Fuente de Neptuno</name></wpt>
+<wpt lat="19.435494" lon="-99.144914"></wpt>
+<wpt lat="19.435123" lon="-99.144253"></wpt>
+<wpt lat="19.435148" lon="-99.144133"><name>Hemiciclo a Juárez</name></wpt>
+<wpt lat="19.435164" lon="-99.144060"></wpt>
+<wpt lat="19.435063" lon="-99.143936"><name>Genocidio Palestina</name></wpt>
+<wpt lat="19.435047" lon="-99.143916"></wpt>
+<wpt lat="19.435184" lon="-99.143170"></wpt>
 <wpt lat="19.435121" lon="-99.143115"></wpt>
 </gpx>
