@@ -14,3 +14,5 @@ The two Mexico City routes marked as new are built from OpenStreetMap contributo
 data (ODbL, https://www.openstreetmap.org/copyright).
 
 The original creator tag is preserved inside each GPX file.
+
+Map preview: Leaflet 1.9.4 (BSD 2-clause, vendor/leaflet/LICENSE), tiles (c) OpenStreetMap contributors.
