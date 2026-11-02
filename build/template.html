@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bizcrafters GPX routes</title>
+<style>
+body{font-family:system-ui,sans-serif;max-width:48rem;margin:1.5rem auto;padding:0 1rem;line-height:1.45}
+.bar{position:sticky;top:0;background:#fff;padding:.6rem 0;border-bottom:1px solid #ddd;display:flex;flex-wrap:wrap;gap:.5rem;align-items:center}
+.bar input{flex:1 1 14rem;padding:.45rem;font-size:1rem}
+.bar select{padding:.45rem;font-size:1rem}
+#count{color:#555;font-size:.9rem}
+details{margin:.4rem 0}
+summary{cursor:pointer;font-weight:600;padding:.25rem 0}
+ul{list-style:none;padding-left:.5rem;margin:.2rem 0}
+li{margin:.25rem 0}
+.w{color:#666;font-size:.8rem}
+.hint{color:#555;font-size:.9rem}
+</style>
+</head>
+<body>
+<h1>GPX routes</h1>
+<p class="hint">Walking routes, waypoints in order. On Android, tap a route to open it in GPS Joy. On a computer, a click saves the file.</p>
+<div class="bar">
+<input id="q" type="search" placeholder="Search city, park, country..." autocomplete="off">
+<select id="sort" aria-label="Sort">
+<option value="loc">Sort: location</option>
+<option value="recent">Sort: recent</option>
+<option value="name">Sort: name</option>
+<option value="size">Sort: waypoints</option>
+</select>
+<select id="group" aria-label="Group">
+<option value="region">Group: region</option>
+<option value="area">Group: country / state</option>
+<option value="none">Group: none</option>
+</select>
+<span id="count"></span>
+</div>
+<div id="out">
+<ul id="all">
+{{ROWS}}
+</ul>
+</div>
+<p class="hint">{{COUNT}} routes. Route geometry for new routes from OpenStreetMap contributors (ODbL). Older collection routes keep their original creator tag inside the file.</p>
+<script>
+(function () {
+  var REGIONS = [{{REGIONS}}];
+  var out = document.getElementById('out');
+  var q = document.getElementById('q');
+  var sortSel = document.getElementById('sort');
+  var groupSel = document.getElementById('group');
+  var countEl = document.getElementById('count');
+  var items = Array.prototype.map.call(document.querySelectorAll('#all > li'), function (li, i) {
+    var link = li.querySelector('a');
+    var name = link.textContent;
+    return {
+      li: li, i: i, r: +li.dataset.r, area: li.dataset.a, added: li.dataset.d, w: +li.dataset.w,
+      name: name, key: fold(name + ' ' + REGIONS[+li.dataset.r])
+    };
+  });
+  function fold(s) { return s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase(); }
+  function cmpStr(a, b) { return a < b ? -1 : a > b ? 1 : 0; }
+  var sorters = {
+    loc: function (a, b) { return a.r - b.r || cmpStr(a.area.toLowerCase(), b.area.toLowerCase()) || cmpStr(a.name.toLowerCase(), b.name.toLowerCase()); },
+    recent: function (a, b) { return cmpStr(b.added, a.added) || cmpStr(a.name.toLowerCase(), b.name.toLowerCase()); },
+    name: function (a, b) { return cmpStr(a.name.toLowerCase(), b.name.toLowerCase()); },
+    size: function (a, b) { return b.w - a.w || cmpStr(a.name.toLowerCase(), b.name.toLowerCase()); }
+  };
+  function render() {
+    var terms = fold(q.value).split(/\s+/).filter(Boolean);
+    var shown = items.filter(function (it) {
+      return terms.every(function (t) { return it.key.indexOf(t) !== -1; });
+    });
+    shown.sort(sorters[sortSel.value]);
+    var mode = groupSel.value;
+    var frag = document.createDocumentFragment();
+    var searching = terms.length > 0;
+    if (mode === 'none') {
+      var ul = document.createElement('ul');
+      shown.forEach(function (it) { ul.appendChild(it.li); });
+      frag.appendChild(ul);
+    } else {
+      var groups = [], byKey = {};
+      shown.forEach(function (it) {
+        var g = mode === 'region' ? REGIONS[it.r] : (it.area || REGIONS[it.r]);
+        if (!byKey.hasOwnProperty(g)) { byKey[g] = { title: g, list: [] }; groups.push(byKey[g]); }
+        byKey[g].list.push(it);
+      });
+      groups.forEach(function (g) {
+        var d = document.createElement('details');
+        if (searching || groups.length === 1) { d.open = true; }
+        var s = document.createElement('summary');
+        s.textContent = g.title + ' (' + g.list.length + ')';
+        d.appendChild(s);
+        var ul = document.createElement('ul');
+        g.list.forEach(function (it) { ul.appendChild(it.li); });
+        d.appendChild(ul);
+        frag.appendChild(d);
+      });
+    }
+    out.textContent = '';
+    out.appendChild(frag);
+    countEl.textContent = shown.length + ' of ' + items.length;
+  }
+  q.addEventListener('input', render);
+  sortSel.addEventListener('change', render);
+  groupSel.addEventListener('change', render);
+  render();
+})();
+</script>
+</body>
+</html>
