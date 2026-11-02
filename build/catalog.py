@@ -13,7 +13,8 @@ def clean_region(folder):
             'Old City Routes': 'City routes (older)',
             'Massive City Routes from BlisseyBuster': 'Massive city routes',
             'Hotspots & Events by GMT DST ON': 'Hotspots and events (DST on)',
-            'Hotspots & Events by GMT DST OFF': 'Hotspots and events (DST off)'}.get(name, name)
+            'Hotspots & Events by GMT DST OFF': 'Hotspots and events (DST off)',
+            'Game Disabled Countries': 'Game disabled countries (Russia, Belarus)'}.get(name, name)
     return num, folder, name
 
 def slugify(s):
@@ -33,10 +34,6 @@ def add(path, folder, name_base, added, wpt_src_text=None, fixed_slug=None):
     text = raw.decode('utf-8-sig', errors='replace').replace('\r\n', '\n')
     num, _, region = clean_region(folder)
     h = hashlib.md5(raw).hexdigest()
-    if num != 14:
-        if h in seen_hash:
-            return
-        seen_hash[h] = path
     name = re.sub(r'\s*\(\d+\)\s*$', '', name_base).strip()
     name = name.replace('Arentina,', 'Argentina,')
     m = re.match(r'\[[^\]]*\]\s*(.*)', name)
