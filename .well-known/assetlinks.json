@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.gpsjoy.app",
+      "sha256_cert_fingerprints": [
+        "59:55:A3:2A:44:35:4A:CF:7B:3D:62:08:2A:47:6D:5A:02:EE:76:17:36:66:CE:01:20:2A:AD:3A:AA:94:89:B2"
+      ]
+    }
+  }
+]
