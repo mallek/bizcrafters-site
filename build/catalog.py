@@ -1,3 +1,5 @@
+# ONE-TIME seed script (reads the original zip on the author machine). Retired: routes.json is now the source of truth.
+# New routes are added by build/add_routes.py, which also runs in CI. Do not re-run this; it would reset routes.json.
 import os, re, hashlib, unicodedata, html, shutil, datetime
 
 SRC = 'C:/Users/travi/AppData/Local/Temp/gpxsample/GPX Routes 02-03-2024'
@@ -81,30 +83,10 @@ for it in items:
     with open('%s/%s.gpx' % (OUT, it['slug']), 'w', encoding='utf-8', newline='\n') as f:
         f.write(t)
 
-# region order
-regions = {}
-for it in items:
-    regions.setdefault((it['num'], it['region']), 0)
-    regions[(it['num'], it['region'])] += 1
-# merge ordering: use sort key (num, name)
-rorder = sorted(regions)
-ridx = {r[1]: i for i, r in enumerate(rorder)}
-
-def area_of(name):
-    nm = re.sub(r'^\[[^\]]*\]\s*', '', name)
-    return nm.split(',')[0].strip() if ',' in nm else ''
-
-items.sort(key=lambda it: (ridx[it['region']], area_of(it['name']).lower(), it['name'].lower()))
-
-def a(s): return html.escape(s, quote=True)
-
-rows = []
-for it in items:
-    rows.append('<li data-r="%d" data-a="%s" data-d="%s" data-w="%d"><a href="/gpx/%s.gpx">%s</a> <span class="w">%d pts</span></li>' % (
-        ridx[it['region']], a(area_of(it['name'])), it['added'], it['n'], it['slug'], xesc(it['name']), it['n']))
-
-regjs = ','.join('"%s"' % r[1].replace('"', '\\"') for r in rorder)
-page = open(SITE + '/build/template.html', encoding='utf-8').read()
-page = page.replace('{{COUNT}}', str(len(items))).replace('{{REGIONS}}', regjs).replace('{{ROWS}}', '\n'.join(rows))
-open(SITE + '/index.html', 'w', encoding='utf-8', newline='\n').write(page)
-print(len(items), 'routes', len(rorder), 'regions')
+# manifest + index (index.py is the single index writer, also used by CI)
+import json, subprocess, sys
+routes = [dict(slug=it['slug'], name=it['name'], num=it['num'], region=it['region'], added=it['added'], n=it['n']) for it in items]
+with open(SITE + '/routes.json', 'w', encoding='utf-8', newline='\n') as f:
+    json.dump(routes, f, ensure_ascii=False, indent=0)
+    f.write('\n')
+subprocess.run([sys.executable, '-I', SITE + '/build/index.py', SITE], check=True)

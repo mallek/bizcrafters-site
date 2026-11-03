@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="rocky (event spots from Discord paste)" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><name>Sendai, Lapras (event spots)</name></metadata>
+<wpt lat="38.2529230" lon="140.8564870"><name>Lapras spot 1</name></wpt>
+<wpt lat="38.2652690" lon="140.8655830"><name>Lapras spot 2</name></wpt>
+<wpt lat="38.3027830" lon="140.9883420"><name>Lapras spot 3</name></wpt>
+<wpt lat="38.2587230" lon="140.8790010"><name>Lapras spot 4</name></wpt>
+<wpt lat="38.4213990" lon="141.3053310"><name>Lapras spot 5</name></wpt>
+<wpt lat="38.0024740" lon="140.6171350"><name>Lapras spot 6</name></wpt>
+<wpt lat="38.3696990" lon="141.0628730"><name>Lapras spot 7</name></wpt>
+<wpt lat="38.2254280" lon="140.7269710"><name>Lapras spot 8</name></wpt>
+</gpx>
