@@ -23110,5 +23110,13 @@
 "region": "Event spots (jump lists)",
 "added": "2026-11-05",
 "n": 3
+},
+{
+"slug": "event-changi-airport-central-loop",
+"name": "Changi Airport Central Loop (event spots)",
+"num": 16,
+"region": "Event spots (jump lists)",
+"added": "2026-11-07",
+"n": 162
 }
 ]
