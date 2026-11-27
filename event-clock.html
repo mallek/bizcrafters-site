@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Event Clock | Bizcrafters GPX</title>
+<style>
+:root{color-scheme:light;font-family:system-ui,sans-serif;color:#182234;background:#f7f9fc}
+*{box-sizing:border-box}body{max-width:950px;padding:0 16px;margin:25px auto 70px;line-height:1.5}
+a{color:#1755a3}h1{margin:.4rem 0}h2{margin:1.8rem 0 .4rem}
+.muted{color:#536277}.panel{background:white;border:1px solid #dce3ed;border-radius:13px;padding:18px;margin:20px 0;box-shadow:0 1px 3px #1b2f4810}
+.controls{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:13px}
+label{display:block;font-size:.88rem;font-weight:600}input,select,button{font:inherit}
+input,select{width:100%;padding:9px;border:1px solid #b7c6d8;border-radius:7px;background:white;color:#182234;margin-top:4px}
+button{background:#fff;border:1px solid #9facc0;padding:7px 10px;border-radius:7px;cursor:pointer}
+button:hover{background:#e9f1fd}.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px}
+#summary{font-weight:600}.city{display:grid;grid-template-columns:minmax(145px,1.3fr) minmax(110px,.8fr) minmax(110px,.8fr) minmax(155px,1.2fr);gap:12px;align-items:center;padding:13px 0;border-top:1px solid #e4eaf2}
+.city:first-child{border-top:0}.city b{display:block}.city small{display:block;color:#627187}
+.status{font-weight:600}.active{color:#176438}.soon{color:#985200}.inactive{color:#5f6b80}
+.route-links{display:flex;gap:12px;flex-wrap:wrap;font-size:.9rem}
+#cities{margin-top:14px}.empty{color:#765f25}
+@media(max-width:610px){.city{grid-template-columns:1fr 1fr}.city .route-links{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<p><a href="/">← All GPX routes</a></p>
+<h1>Global Event Clock</h1>
+<p class="muted">Plan a local-time Pokémon GO event across time zones. Find locations where the event is active, starting soon, or upcoming, then open a matching GPX route. Times adjust automatically for daylight saving time on the selected date.</p>
+<section class="panel" aria-label="Event settings">
+<div class="controls">
+<label>Event starts (local time)<input id="start" type="time" value="10:00"></label>
+<label>Event ends (local time)<input id="end" type="time" value="18:00"></label>
+<label>Check time (UTC)<input id="when" type="datetime-local"></label>
+<label>Locations<select id="filter"><option value="all">All cities</option><option value="active">Active now</option><option value="upcoming">Starting next</option></select></label>
+</div>
+<div class="toolbar"><button id="now" type="button">Use current time</button><button id="back" type="button">−1 hour</button><button id="next" type="button">+1 hour</button><span class="muted" id="utc-label"></span></div>
+<p id="summary" aria-live="polite"></p>
+<p class="muted">This is a time-zone planner, not a verified event schedule. Enter the game's published local start/end times. Date and time above are UTC, not your computer's local time. Event availability, access rules, and travel cooldowns are not verified.</p>
+</section>
+<h2>Locations and routes</h2>
+<p class="muted">Showing a curated set of major event cities from the GPX collection. Every listed destination links to a route actually present in the catalog. “Next start” assumes the event repeats at the selected local time each day.</p>
+<div id="cities" class="panel"><p>Loading route catalog…</p></div>
+<script>
+(function(){
+'use strict';
+var DESTINATIONS=[
+ ['Auckland','Pacific/Auckland','new-zealand-auckland-auckland-domain'],
+ ['Sydney','Australia/Sydney','australia-sydney-centennial-park'],
+ ['Tokyo','Asia/Tokyo','japan-tokyo-hibiya-park'],
+ ['Seoul','Asia/Seoul','south-korea-seoul-boramae-park'],
+ ['Taipei','Asia/Taipei','taiwan-taipei-daan-forest-park'],
+ ['Singapore','Asia/Singapore','singapore-gardens-by-the-bay'],
+ ['Dubai','Asia/Dubai','united-arab-emirates-dubai-al-barscha-pond-park'],
+ ['Zaragoza','Europe/Madrid','spain-zaragoza-zaragoza-1'],
+ ['Paris','Europe/Paris','france-paris-parc-montsouris'],
+ ['London','Europe/London','uk-london-battersea-park'],
+ ['New York','America/New_York','new-york-new-york-city-central-park-1'],
+ ['Mexico City','America/Mexico_City','mexico-mexico-city-mexico-city-park-small'],
+ ['Denver','America/Denver','colorado-denver-city-park'],
+ ['Los Angeles','America/Los_Angeles','california-los-angeles-exposition-park-rose-garden'],
+ ['Honolulu','Pacific/Honolulu','hawaii-honolulu-downtown-area-1']
+];
+var $=function(id){return document.getElementById(id)}, routes={}, available=[];
+var when=$('when'), start=$('start'), end=$('end'), filter=$('filter');
+function utcInput(d){return d.toISOString().slice(0,16)}
+function setNow(){when.value=utcInput(new Date());render()}
+function minutes(s){var p=s.split(':').map(Number);return p[0]*60+p[1]}
+function localParts(d,tz){var parts=new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',hourCycle:'h23',weekday:'short',month:'short',day:'numeric'}).formatToParts(d), o={};parts.forEach(function(p){o[p.type]=p.value});return {minutes:Number(o.hour)*60+Number(o.minute),label:o.weekday+' '+o.day+' '+o.month+', '+o.hour+':'+o.minute}}
+function remaining(now,begin){return (begin-now+1440)%1440}
+function status(now,begin,finish){var dur=(finish-begin+1440)%1440, elapsed=(now-begin+1440)%1440;
+ if(dur===0)return {state:'inactive',label:'Set different start/end',remaining:0};
+ if(elapsed<dur)return {state:'active',label:'Active · '+Math.ceil(dur-elapsed)+'m left',remaining:0};
+ var wait=remaining(now,begin);return {state:wait<=120?'soon':'inactive',label:'Starts in '+Math.floor(wait/60)+'h '+(wait%60)+'m',remaining:wait}
+}
+function el(tag,cls,text){var n=document.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n}
+function render(){
+ var d=new Date((when.value||utcInput(new Date()))+'Z');if(!Number.isFinite(d.getTime()))return;
+ var begin=minutes(start.value),finish=minutes(end.value);
+ $('utc-label').textContent=d.toISOString().replace('T',' ').slice(0,16)+' UTC';
+ var list=available.map(function(c){var local=localParts(d,c.tz),s=status(local.minutes,begin,finish);return {c:c,local:local,s:s}});
+ list.sort(function(a,b){var order={active:0,soon:1,inactive:2};return order[a.s.state]-order[b.s.state]||a.s.remaining-b.s.remaining||a.c.name.localeCompare(b.c.name)});
+ var active=list.filter(function(x){return x.s.state==='active'}).length;
+ $('summary').textContent=active+' of '+list.length+' cities active at this instant';
+ list=list.filter(function(x){return filter.value==='all'||(filter.value==='active'&&x.s.state==='active')||(filter.value==='upcoming'&&x.s.state!=='active')});
+ var root=$('cities');root.replaceChildren();
+ if(!list.length){root.appendChild(el('p','empty','No matching cities for this time. Adjust the time or filter.'));return}
+ list.forEach(function(x){var c=x.c,row=el('div','city'),title=el('div');
+ title.appendChild(el('b',null,c.name));title.appendChild(el('small',null,c.tz));
+ row.appendChild(title);row.appendChild(el('div',null,x.local.label));
+ row.appendChild(el('div','status '+x.s.state,x.s.label));
+ var links=el('div','route-links');var a=el('a',null,'Download GPX');a.href='/gpx/'+encodeURIComponent(c.slug)+'.gpx';links.appendChild(a);
+ var map=el('a',null,'Preview map');map.href='/#p='+encodeURIComponent(c.slug);links.appendChild(map);
+ row.appendChild(links);root.appendChild(row)
+ });
+}
+function shift(n){var d=new Date(when.value+'Z');if(!Number.isFinite(d.getTime()))return;d.setUTCHours(d.getUTCHours()+n);when.value=utcInput(d);render()}
+$('now').addEventListener('click',setNow);$('back').addEventListener('click',function(){shift(-1)});$('next').addEventListener('click',function(){shift(1)});
+[start,end,when,filter].forEach(function(input){input.addEventListener('change',render)});
+when.value=utcInput(new Date());
+fetch('/routes.json').then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json()}).then(function(all){
+ all.forEach(function(r){routes[r.slug]=r});
+ available=DESTINATIONS.filter(function(x){return !!routes[x[2]]}).map(function(x){return {name:x[0],tz:x[1],slug:x[2]}});
+ if(!available.length){throw Error('No curated GPX routes were found in the catalog')}
+ render();
+}).catch(function(err){$('cities').textContent='Could not load the route catalog: '+err.message});
+})();
+</script>
+</body>
+</html>
